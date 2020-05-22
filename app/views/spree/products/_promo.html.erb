@@ -1,5 +1,5 @@
-<% @promotions.each do |promotion| %>
-   <p><%= promotion.descripition %></p>
+<% Spree::Promotion.active.each  do |promotion| %>
+   <p><%= promotion.description %></p>
    <p><%= promotion.name %></p>
    <p><%= promotion.code %></p>
    <% end %>
