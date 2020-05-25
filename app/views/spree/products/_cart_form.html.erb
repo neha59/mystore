@@ -71,10 +71,17 @@
           <%= render 'spree/shared/quantity_select', input_name: :quantity %>
         </div>
 
-        <%= button_tag class: 'btn btn-primary w-100 text-uppercase font-weight-bold add-to-cart-button', id: 'add-to-cart-button', type: :submit, disabled: true do %>
+        <%= button_tag  id: "add_alert",class: 'btn btn-primary w-100 text-uppercase font-weight-bold add-to-cart-button ', id: 'add-to-cart-button', type: :submit, disabled: true do %>
           <%= Spree.t(:add_to_cart) %>
         <% end %>
       </div>
     <% end %>
   </div>
 <% end %>
+<script>
+document.getElementById("add_alert").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+</script>
