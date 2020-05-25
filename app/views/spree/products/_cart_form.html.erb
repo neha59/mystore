@@ -79,9 +79,11 @@
   </div>
 <% end %>
 <script>
+
 document.getElementById("add_alert").addEventListener("click", myFunction);
 
 function myFunction() {
-  alert ("Hello World!");
+  var x=document.getElementById("alert_msg");
+  alert ("Hello World!"+ x);
 }
 </script>
